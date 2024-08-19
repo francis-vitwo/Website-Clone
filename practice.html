@@ -1,71 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practice Set</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-      rel="stylesheet">
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous">
-    <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/style.css">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice Set</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./style.css">
+</head>
 
-  <body>
+<body>
+  <!-- header line  -->
+  <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+          aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#" alt="Home">
+          <img src="./images/logo.png" alt="Logo" width="100px" height="30px">
+        </a>
 
-    <!-- header line  -->
-    <header class="header">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarTogglerDemo03"
-            aria-controls="navbarTogglerDemo03" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <a class="navbar-brand" href="#" alt="Home">
-            <img src="/images/logo.png" alt="Logo" width="100px" height="30px">
-          </a>
-
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">About
-                  Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#"> Virtual CFO
-                  Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"> Blogs & Resources</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"> Career</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <button class="btn btn-outline-success"
-                type="submit">Explore !</button>
-            </form>
-          </div>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo03">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">About
+                Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#"> Virtual CFO
+                Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Blogs & Resources</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Career</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
+  </header>
 
-    <!-- section 1  -->
 
-    <section class="section1">
-      <div class="row">
+
+
+
+
+  <!-- section 1  -->
+
+  <section class="section1">
+    <div class="container">
+      <div class="row align-items-center">
         <div class="col-lg-7 col-md-7 col-sm-12 col-12">
           <h1>Virtual CFO Services</h1>
           <p>Virtual CFO Manages - Accounting, Bookkeeping, Finance, Legal
@@ -76,28 +71,22 @@
             Build finance processes.</p>
           <div>
             <div class="section1-img-slider">
-              <div id="carouselExample" class="carousel slide"
-                data-bs-ride="carousel">
+              <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="/images/slide1.webp" class="d-block w-100"
-                      alt="...">
+                    <img src="./images/slide1.webp" class="d-block w-100" alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="/images/slide2.webp" class="d-block w-100"
-                      alt="...">
+                    <img src="./images/slide2.webp" class="d-block w-100" alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="/images/slide3.webp" class="d-block w-100"
-                      alt="...">
+                    <img src="./images/slide3.webp" class="d-block w-100" alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="/images/slide4.webp" class="d-block w-100"
-                      alt="...">
+                    <img src="./images/slide4.webp" class="d-block w-100" alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="/images/slide5.webp" class="d-block w-100"
-                      alt="...">
+                    <img src="./images/slide5.webp" class="d-block w-100" alt="...">
                   </div>
                 </div>
               </div>
@@ -108,67 +97,63 @@
         <div class="col-lg-5 col-md-5 col-sm-12 col-12">
 
           <!-- form section  -->
-          <div class="card-body">
-            <h2> Ask Our Expets !</h2>
+          <div class="form-body">
+            <h2 class="mb-5"> Ask Our Expets !</h2>
             <div class="form"></div>
             <form class="row g-3">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                  <label for="inputEmail4" class="form-label">First Name</label>
-                  <input type="email" class="form-control" id="inputEmail4">
+              <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                <label for="inputEmail4" class="form-label">First Name</label>
+                <input type="email" class="form-control" id="inputEmail4">
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                <label for="LAst Name" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="inputPassword4">
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                <label for="inputAddress" class="form-label">Steet/Plot No.</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                <label for="inputAddress2" class="form-label">Address
+                  Line 1</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                <label for="inputCity" class="form-label">City</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                <label for="inputState" class="form-label">State</label>
+                <select id="inputState" class="form-select">
+                  <option selected>Choose...</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                <label for="inputZip" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="inputZip">
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                  <label class="form-check-label" for="gridCheck">
+                    Remember me !
+                  </label>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                  <label for="LAst Name"
-                    class="form-label">Last Name</label>
-                  <input type="text" class="form-control"
-                    id="inputPassword4">
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                  <label for="inputAddress" class="form-label">Steet/Plot No.</label>
-                  <input type="text" class="form-control" id="inputAddress"
-                    placeholder="1234 Main St">
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                  <label for="inputAddress2" class="form-label">Address
-                     Line 1</label>
-                  <input type="text" class="form-control" id="inputAddress2"
-                    placeholder="Apartment, studio, or floor">
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                  <label for="inputCity" class="form-label">City</label>
-                  <input type="text" class="form-control" id="inputCity">
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                  <label for="inputState" class="form-label">State</label>
-                  <select id="inputState" class="form-select">
-                    <option selected>Choose...</option>
-                    <option>...</option>
-                  </select>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                  <label for="inputZip" class="form-label">Zip</label>
-                  <input type="text" class="form-control" id="inputZip">
-                </div>
-                <div class="col-12">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox"
-                      id="gridCheck">
-                    <label class="form-check-label" for="gridCheck">
-                      Remember me !
-                    </label>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <button type="submit" class="btn btn-success btn-sm">Register
-                  </button>
-                </div>
-              </form>
-            </div>
-
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-success btn-sm">Register
+                </button>
+              </div>
+            </form>
           </div>
+
         </div>
       </div>
+    </div>
+  </section>
 
-    </section>
+  <div class="container-fluid">
 
     <!-- section 2  -->
 
@@ -179,12 +164,10 @@
           <!-- Video -->
           <div class="col-lg-5 col-md-5 col-sm-12 col-12">
             <div class="video">
-              <iframe width="100%" height="500px"
-                src="https://www.youtube.com/embed/UpzCuKkveTI?si=juKAtel0JT6TgIwQ"
+              <iframe width="100%" height="500px" src="https://www.youtube.com/embed/UpzCuKkveTI?si=juKAtel0JT6TgIwQ"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen></iframe>
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
           </div>
 
@@ -217,7 +200,7 @@
               <div class="col-lg-6 col-md-6 col-sm-12 col-12">
 
                 <div class="img-wrapper">
-                  <img src="/images/section2-icon1.webp" alt="service1">
+                  <img src="./images/section2-icon1.webp" alt="service1">
                   <div class="img-wrapper-text">
                     <h4>Financial Strategy and Planning:</h4>
                     <p>We develop customized financial strategies that align
@@ -226,7 +209,7 @@
                 </div>
 
                 <div class="img-wrapper">
-                  <img src="/images/section2-icon2.webp" alt="service1">
+                  <img src="./images/section2-icon2.webp" alt="service1">
                   <div class="img-wrapper-text">
                     <h4>Budgeting and Forecasting:</h4>
                     <p> Our experts create accurate budgets and forecasts,
@@ -235,7 +218,7 @@
                 </div>
 
                 <div class="img-wrapper">
-                  <img src="/images/section2-icon3.webp" alt="service1">
+                  <img src="./images/section2-icon3.webp" alt="service1">
                   <div class="img-wrapper-text">
                     <h4>Financial Reporting and Analysis:</h4>
                     <p>We prepare comprehensive financial reports and analyses,
@@ -246,10 +229,10 @@
 
               <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                 <div class="graph-img">
-                  <img src="/images/section2-graph.png" alt="section2-graph">
+                  <img src="./images/section2-graph.png" alt="section2-graph">
                   <div class="img-text">
                     <p><strong>1000+</strong></p>
-                    <p>Startups works with us</p>
+                    <p class="info">Startups works with us</p>
                   </div>
                 </div>
               </div>
@@ -308,8 +291,7 @@
           <!-- right side image  -->
           <div class="col-lg-6 col-md-6 col-sm-12 col-12">
             <div class="image-container">
-              <img src="/images/Section3-img.webp" alt="Section3-img"
-                style=" width: 100%; height: 100%;">
+              <img src="./images/Section3-img.webp" alt="Section3-img" style=" width: 100%; height: 100%;">
             </div>
           </div>
         </div>
@@ -318,49 +300,250 @@
 
     <!-- section 4  -->
 
-    <!-- <section class="section4">
-    <div class="section4-container">
-      <div class="row">
-        <h2 class="h2">Text</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quia iste totam odio magnam? Reiciendis
-          nulla ipsam temporibus quae. Eos dolores magni, ut odit inventore consectetur fuga ad minima magnam?</p>
-        <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+    <section class="section4">
+      <div class="section4-container">
+        <div class="row">
+          <h2 class="h2">Services We Provide</h2>
+          <p>At StartupFino we offer a comprehensive range of Virtual CFO services designed to meet the unique financial
+            needs of your business.
+            Our expertise and personalized approach ensure that you receive the highest level of support and strategic
+            guidance. Our key services include:</p>
 
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+          <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+            <div class="table-box">
+              <div class="icon-img">
+                <img src="./images/icon-image1.png" alt="icon-image1">
+                <div class="icon-img-text">
+                  <h5>Finance</h5>
+                </div>
+              </div>
+              <div class="ul">
+                <li>Accounting and Bookkeeping</li>
+                <li>MIS Reporting</li>
+                <li>Tax Compliances Management</li>
+                <li>Financial Strategy Development</li>
+                <li>Budgeting and Financial Forecasting</li>
+                <li>Cash Flow Management</li>
+                <li>Risk Management and Compliance</li>
+                <li>Investment and Fundraising Assistance</li>
+                <li>Financial Reporting and Analysis</li>
+              </div>
+            </div>
+          </div>
 
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+          <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+            <div class="table-box">
+              <div class="icon-img">
+                <img src="./images/icon-image2.png" alt="icon-image2">
+                <div class="icon-img-text">
+                  <h5>Legal</h5>
+                </div>
+              </div>
+              <div class="ul">
+                <li>Drafting Legal Agreements</li>
+                <li>Ongoing corporate governance</li>
+                <li>Preparation and negotiation of contracts</li>
+                <li>Guidance on contracts and policies</li>
+                <li>Handling disputes, and compliance</li>
+                <li>Registration and protection of trademarks</li>
+                <li>Advising on industry-specific regulatory requirement</li>
+                <li>Assistance with regulatory filings</li>
+              </div>
+            </div>
+          </div>
 
+          <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+            <div class="table-box">
+              <div class="icon-img">
+                <img src="./images/icon-image3.png" alt="icon-image3">
+                <div class="icon-img-text">
+                  <h5>Secretarial</h5>
+                </div>
+              </div>
+              <div class="ul">
+                <li>Term Sheet/ SHA</li>
+                <li>Due Diligence Handling</li>
+                <li>Investor Relationship Management</li>
+                <li>ESOPs Implementation</li>
+                <li>Corporate Compliance</li>
+                <li>Board Meeting Management</li>
+                <li>Document Preparation and Filing</li>
+                <li>Shareholder Communication</li>
+                <li>Corporate Governance Advisory</li>
+                <li>Entity Formation and Dissolution</li>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section> -->
+    </section>
 
-    <!-- footer line  -->
-    <div class="container">
-      <footer class="py-3 my-4">
-        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-          <li class="nav-item"><a href="#"
-              class="nav-link px-2 text-muted">Home</a></li>
-          <li class="nav-item"><a href="#"
-              class="nav-link px-2 text-muted">Features</a></li>
-          <li class="nav-item"><a href="#"
-              class="nav-link px-2 text-muted">Pricing</a></li>
-          <li class="nav-item"><a href="#"
-              class="nav-link px-2 text-muted">FAQs</a></li>
-          <li class="nav-item"><a href="#"
-              class="nav-link px-2 text-muted">About</a></li>
-        </ul>
-        <p class="text-center text-muted">© 2022 Company, Inc</p>
-      </footer>
-    </div>
 
-    <!-- JS Script  -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"></script>
-  </body>
+
+    <!-- section 5  -->
+    <section class="section5">
+      <div class="section5-container">
+        <div class="row">
+          <form class="form">
+            <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+              <div class="heading">
+                <h2>Startups Looking to Connect with us?</h2>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+              <div class="email">
+                <input type="email" class="form-control" placeholder="Email" aria-label="Email">
+                <span class="text-danger" id="msg_email_ft"></span>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+              <div class="number">
+                <input type="number" class="form-control" placeholder="Number*" aria-label="Number"
+                  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1').replace(/^0[^.]/, '0');"
+                  id="mobile_ft" required="">
+                <span id="msg_mobile_ft" class="text-danger"></span>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+              <div class="button">
+                <button type="submit" class="btn btn-success btn-lg" id="servicebtnM2"
+                  style="border-radius: 50px;">Send</button>
+              </div>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- section 6  -->
+    <section class="section6">
+      <div class="section6-container">
+        <h1>Benefits of Virtual CFO</h1>
+        <p>A Virtual CFO plays a important role in today's business by providing essential financial expertise and
+          strategic guidance without the commitment of a full-time executive. This outsourced model not only reduces
+          costs
+          but also brings specialized knowledge that can significantly enhance financial performance and operational
+          efficiency, ultimately positioning the business for sustainable growth and success in a competitive market.
+        </p>
+
+        <div class="row benefits-section mt-5">
+          <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+
+
+            <div class="wrapper">
+              <div class="icon-img">
+                <img src="./images/icon-image4.png" alt="icon-image3">
+                <div class="icon-text">
+                  <h5>Cost-Effective Expertise:</h5>
+                  <p>Access to high-level financial expertise without the expense of a full-time CFO this make it
+                    affordable for small and medium-sized businesses.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="wrapper">
+              <div class="icon-img">
+                <img src="./images/icon-image5.png" alt="icon-image3">
+                <div class="icon-img-text">
+                  <h5>Strategic Financial Planning:</h5>
+                  <p>Benefit from advanced financial strategies and planning to support long-term business growth and
+                    sustainability.</p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="wrapper">
+              <div class="icon-img">
+                <img src="./images/icon-image6.png" alt="icon-image3">
+                <div class="icon-img-text">
+                  <h5>Improved Cash Flow Management:</h5>
+                  <p>Enhance cash flow management practices to ensure liquidity and financial stability, helping the
+                    business meet its obligations.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-12 col-12 text-center">
+            <img src="./images/section6-img.png" class="benefit-image" alt="section2-img">
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+
+            <div class="wrapper">
+              <div class="icon-img">
+                <img src="./images/icon-image7.png" alt="icon-image3">
+
+                <div class="icon-img-text">
+                  <h5>Informed Decision-Making:</h5>
+                  <p>Receive detailed financial analyses and insights, enabling better-informed business decisions that
+                    drive profitability and growth.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="wrapper">
+              <div class="icon-img">
+                <img src="./images/icon-image8.png" alt="icon-image3">
+
+                <div class="icon-img-text">
+                  <h5>Risk Mitigation:</h5>
+                  <p>Implement effective risk management strategies to identify, assess, and mitigate financial risks,
+                    afeguarding the business's future.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="wrapper">
+
+              <div class="icon-img">
+                <img src="./images/icon-image9.png" alt="icon-image3">
+
+                <div class="icon-img-text">
+                  <h5>Flexibility and Scalability:</h5>
+                  <p>Enjoy the flexibility to scale services up or down based on your business's needs, ensuring you
+                    only
+                    pay for what you need when you need it.</p>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- footer line  -->
+  <div class="container">
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+      </ul>
+      <p class="text-center text-muted">© 2022 Company, Inc</p>
+    </footer>
+  </div>
+
+
+
+  <!-- JS Script  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
 
 </html>
