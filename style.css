@@ -5,7 +5,9 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  font-size: 15px;
+  font-size: 0.9rem;
+  overflow-x: hidden;
+  line-height: 1.8;
 }
 
 .header .navbar-nav {
@@ -17,17 +19,17 @@ body {
 .section1 {
   color: aliceblue;
   background-color: rgb(59, 66, 163);
-  background-image: url(/images/shadow-img1.webp);
+  background-image: url(../practice-set/images/shadow-img1.webp);
   background-size: cover;
   background-repeat: no-repeat;
   padding: 30px 40px;
 }
 
-/* .section1 {}
+.section1 {
   box-sizing:content-box;
-  border-radius: 30px;
-} */
+}
 
+.section1
 .carousel-indicators {
   bottom: 0;
   width: 125%;
@@ -88,10 +90,31 @@ body {
   text-align: left;
 }
 
-
-.section3 {
-  padding: 30px 40px;
+.section2 .graph-img{
+  box-sizing: border-box;
+  box-shadow: 0px 3px 22px rgba(185.98, 200.77, 222.06, 0.48);
+  border-radius: 12px;
+  margin-left: 40px;
+  padding: 10px;
+  width: 304px;
+  height: 228px;
 }
+.section2 .graph-img img{
+  width: 100%;
+  height: auto
+}
+
+.section2 .img-text{
+  display: block;
+  position: absolute;
+  top: 164%;
+  
+}
+
+.section2 .img-text strong {
+  font-size: 18px !important;
+}
+
 
 .section3 .text h1 {
   font-size: 38px;
@@ -131,6 +154,154 @@ body {
 .image-container img {
   object-fit: contain;
 }
+
+.section4 {
+  padding: 30px 40px;
+}
+
+.section4 h2 {
+  text-align: center;
+}
+
+.section4 p {
+  text-align: center;
+}
+
+.section4 .table-box{
+  background-color: #d0f8d7;
+  padding: 10px;
+  border-radius: 16px;
+  height: 445px;
+}
+
+.section4 .icon-img {
+  display: flex;
+  align-items: center;
+  background-color: #1a8310;
+  padding: 10px; 
+  border-radius: 6px;
+}
+
+.section4 .icon-img img{
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.section4 .icon-img-text h5{
+  text-align: center ;
+  color: #fff;}
+
+.section4 .ul{
+ padding: 15px;
+}
+
+.section5-container{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #87eca0;
+}
+
+.section5-container form{
+    display: flex;
+    padding: 20px 30px 30px 30px;
+    align-items: center;
+    outline: #fff;
+}
+
+.section5-container .form input{
+  outline: none;
+}
+
+.section5-container .form input:focus{
+  box-shadow: none;
+}
+
+.section5-container .form .heading h2{
+  font-weight: 600;
+  font-size: 17px !important;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.section5-container form .email{
+  background-color: rgb(253, 253, 253);
+  width: 100%;
+  border: 2px solid #3dc015;
+  border-radius: 24px;
+  padding: 13px 50px 13px 20px;
+  margin-left: 15px;
+}
+
+.section5-container form .number{
+  background-color: rgb(253, 253, 253);
+  width: 100%;
+  border: 2px solid #3dc015;
+  border-radius: 24px;
+  padding: 13px 50px 13px 20px;
+  margin-left: 30px;
+}
+
+.section5-container form .button{
+  margin-left: 50px;
+} 
+
+.section6-container{
+ padding: 40px;
+}
+
+.section6-container h1{
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 35px;
+}
+
+.section6-container p{
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 15px;
+  padding: 0 20px;
+}
+
+.section6-container .warapper .icon-img{
+  display: flex;
+}
+
+.section6-container .icon-img img{
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.section6-container .icon-img-text{
+  display: block;
+}
+
+.benefits-section .wrapper p{
+  text-align: left;
+  padding: 0;
+}
+
+.benefits-section .icon-img {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+}
+
+.benefit-image {
+  position: relative;
+  width: 350px;
+  height: auto;
+}
+
+.form-body {
+  background: #ffffff29;
+  padding: 25px 20px;
+  border-radius: 15px;
+  border: 1px solid #ffffff57;
+}
+
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
   body {
