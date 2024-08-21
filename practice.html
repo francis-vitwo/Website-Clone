@@ -16,10 +16,10 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 
-<body>
+<body is="is-gomes-body">
   <!-- header line  -->
-  <header class="header">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <header class="header gomes-header">
+    <nav class="navbar fixed-top navbar-expand-lg">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
           aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,15 +29,14 @@
           <img src="./images/logo.png" alt="Logo" width="100px" height="30px">
         </a>
 
-        <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo03">
+        <div class="collapse navbar-collapse justify-content-lg-end" id="navbarTogglerDemo03">
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">About
                 Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#"> Virtual CFO
-                Services</a>
+              <a class="nav-link" aria-current="page" href="#"> Virtual CFO Services</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#"> Blogs & Resources</a>
@@ -51,14 +50,9 @@
     </nav>
   </header>
 
-
-
-
-
-
   <!-- section 1  -->
 
-  <section class="section1">
+  <section class="gomes-section section1">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-7 col-md-7 col-sm-12 col-12">
@@ -71,22 +65,29 @@
             Build finance processes.</p>
           <div>
             <div class="section1-img-slider">
-              <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="./images/slide1.webp" class="d-block w-100" alt="...">
+                    <img src="./images/slide1.webp" class="d-block" alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="./images/slide2.webp" class="d-block w-100" alt="...">
+                    <img src="./images/slide2.webp" class="d-block" alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="./images/slide3.webp" class="d-block w-100" alt="...">
+                    <img src="./images/slide3.webp" class="d-block" alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="./images/slide4.webp" class="d-block w-100" alt="...">
+                    <img src="./images/slide4.webp" class="d-block" alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="./images/slide5.webp" class="d-block w-100" alt="...">
+                    <img src="./images/slide2.webp" class="d-block" alt="...">
                   </div>
                 </div>
               </div>
@@ -98,55 +99,35 @@
 
           <!-- form section  -->
           <div class="form-body">
-            <h2 class="mb-5"> Ask Our Expets !</h2>
-            <div class="form"></div>
-            <form class="row g-3">
-              <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                <label for="inputEmail4" class="form-label">First Name</label>
-                <input type="email" class="form-control" id="inputEmail4">
-              </div>
-              <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                <label for="LAst Name" class="form-label">Last Name</label>
-                <input type="text" class="form-control" id="inputPassword4">
-              </div>
-              <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                <label for="inputAddress" class="form-label">Steet/Plot No.</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-              </div>
-              <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                <label for="inputAddress2" class="form-label">Address
-                  Line 1</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-              </div>
-              <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                <label for="inputCity" class="form-label">City</label>
-                <input type="text" class="form-control" id="inputCity">
-              </div>
-              <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                <label for="inputState" class="form-label">State</label>
-                <select id="inputState" class="form-select">
-                  <option selected>Choose...</option>
-                  <option>...</option>
-                </select>
-              </div>
-              <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                <label for="inputZip" class="form-label">Zip</label>
-                <input type="text" class="form-control" id="inputZip">
-              </div>
-              <div class="col-12">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="gridCheck">
-                  <label class="form-check-label" for="gridCheck">
-                    Remember me !
-                  </label>
+            <h2>Ask Our Expets !</h2>
+            <div class="form">
+              <form class="row g-3">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                  <label for="inputEmail4" class="form-label">Name <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" id="inputEmail4" placeholder="Name..">
                 </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                  <label for="inputEmail4" class="form-label">Email <span class="text-danger">*</span></label>
+                  <input type="email" class="form-control" id="inputEmail4" placeholder="Email..">
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                  <label for="inputEmail4" class="form-label">Mobile <span class="text-danger">*</span></label>
+                  <input type="number" class="form-control" id="inputEmail4" placeholder="Mobile..">
+                </div>
+            
+                <div class="col-12">
+                  <button type="submit" class="btn btn-success btn-sm w-100 my-3">Register
+                  </button>
+                </div>
+              </form>
+
+              <div class="text">
+                <p>I agree to receive the brochure on</p>
+               
+                <p>Need to speak to an expert?</p>
+                <a href="#"><p>Get Free Consultation</p></a>
               </div>
-              <div class="col-12">
-                <button type="submit" class="btn btn-success btn-sm">Register
-                </button>
-              </div>
-            </form>
-          </div>
+            </div>
 
         </div>
       </div>
@@ -157,7 +138,7 @@
 
     <!-- section 2  -->
 
-    <section class="section2">
+    <section class="gomes-section section2">
       <div class="section2-container">
         <div class="row">
 
@@ -245,7 +226,7 @@
 
     <!-- section 3  -->
 
-    <section class="section3">
+    <section class="gomes-section section3">
       <div class="section3-container">
         <div class="row">
 
@@ -300,7 +281,7 @@
 
     <!-- section 4  -->
 
-    <section class="section4">
+    <section class="gomes-section section4">
       <div class="section4-container">
         <div class="row">
           <h2 class="h2">Services We Provide</h2>
@@ -318,15 +299,15 @@
                 </div>
               </div>
               <div class="ul">
-                <li>Accounting and Bookkeeping</li>
-                <li>MIS Reporting</li>
-                <li>Tax Compliances Management</li>
-                <li>Financial Strategy Development</li>
-                <li>Budgeting and Financial Forecasting</li>
-                <li>Cash Flow Management</li>
-                <li>Risk Management and Compliance</li>
-                <li>Investment and Fundraising Assistance</li>
-                <li>Financial Reporting and Analysis</li>
+                <li><i class="fas fa-check-circle"></i>Accounting and Bookkeeping</li>
+                <li><i class="fas fa-check-circle"></i>MIS Reporting</li>
+                <li><i class="fas fa-check-circle"></i>Tax Compliances Management</li>
+                <li><i class="fas fa-check-circle"></i>Financial Strategy Development</li>
+                <li><i class="fas fa-check-circle"></i>Budgeting and Financial Forecasting</li>
+                <li><i class="fas fa-check-circle"></i>Cash Flow Management</li>
+                <li><i class="fas fa-check-circle"></i>Risk Management and Compliance</li>
+                <li><i class="fas fa-check-circle"></i>Investment and Fundraising Assistance</li>
+                <li><i class="fas fa-check-circle"></i>Financial Reporting and Analysis</li>
               </div>
             </div>
           </div>
@@ -340,14 +321,14 @@
                 </div>
               </div>
               <div class="ul">
-                <li>Drafting Legal Agreements</li>
-                <li>Ongoing corporate governance</li>
-                <li>Preparation and negotiation of contracts</li>
-                <li>Guidance on contracts and policies</li>
-                <li>Handling disputes, and compliance</li>
-                <li>Registration and protection of trademarks</li>
-                <li>Advising on industry-specific regulatory requirement</li>
-                <li>Assistance with regulatory filings</li>
+                <li><i class="fas fa-check-circle"></i>Drafting Legal Agreements</li>
+                <li><i class="fas fa-check-circle"></i>Ongoing corporate governance</li>
+                <li><i class="fas fa-check-circle"></i>Preparation and negotiation of contracts</li>
+                <li><i class="fas fa-check-circle"></i>Guidance on contracts and policies</li>
+                <li><i class="fas fa-check-circle"></i>Handling disputes, and compliance</li>
+                <li><i class="fas fa-check-circle"></i>Registration and protection of trademarks</li>
+                <li><i class="fas fa-check-circle"></i>Advising on industry-specific regulatory requirement</li>
+                <li><i class="fas fa-check-circle"></i>Assistance with regulatory filings</li>
               </div>
             </div>
           </div>
@@ -361,16 +342,16 @@
                 </div>
               </div>
               <div class="ul">
-                <li>Term Sheet/ SHA</li>
-                <li>Due Diligence Handling</li>
-                <li>Investor Relationship Management</li>
-                <li>ESOPs Implementation</li>
-                <li>Corporate Compliance</li>
-                <li>Board Meeting Management</li>
-                <li>Document Preparation and Filing</li>
-                <li>Shareholder Communication</li>
-                <li>Corporate Governance Advisory</li>
-                <li>Entity Formation and Dissolution</li>
+                <li><i class="fas fa-check-circle"></i>Term Sheet/ SHA</li>
+                <li><i class="fas fa-check-circle"></i>Due Diligence Handling</li>
+                <li><i class="fas fa-check-circle"></i>Investor Relationship Management</li>
+                <li><i class="fas fa-check-circle"></i>ESOPs Implementation</li>
+                <li><i class="fas fa-check-circle"></i>Corporate Compliance</li>
+                <li><i class="fas fa-check-circle"></i>Board Meeting Management</li>
+                <li><i class="fas fa-check-circle"></i>Document Preparation and Filing</li>
+                <li><i class="fas fa-check-circle"></i>Shareholder Communication</li>
+                <li><i class="fas fa-check-circle"></i>Corporate Governance Advisory</li>
+                <li><i class="fas fa-check-circle"></i>Entity Formation and Dissolution</li>
               </div>
             </div>
           </div>
@@ -379,27 +360,26 @@
     </section>
 
 
-
     <!-- section 5  -->
-    <section class="section5">
+    <section class="gomes-section section5">
       <div class="section5-container">
-        <div class="row">
-          <form class="form">
+        <form class="form">
+            <div class="row g-4">
             <div class="col-lg-3 col-md-3 col-sm-12 col-12">
-              <div class="heading">
+              <div class="heading ">
                 <h2>Startups Looking to Connect with us?</h2>
               </div>
             </div>
 
             <div class="col-lg-3 col-md-3 col-sm-12 col-12">
-              <div class="email">
+              <div class="email ">
                 <input type="email" class="form-control" placeholder="Email" aria-label="Email">
                 <span class="text-danger" id="msg_email_ft"></span>
               </div>
             </div>
 
             <div class="col-lg-3 col-md-3 col-sm-12 col-12">
-              <div class="number">
+              <div class="number ">
                 <input type="number" class="form-control" placeholder="Number*" aria-label="Number"
                   oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1').replace(/^0[^.]/, '0');"
                   id="mobile_ft" required="">
@@ -408,21 +388,20 @@
             </div>
 
             <div class="col-lg-3 col-md-3 col-sm-12 col-12">
-              <div class="button">
+              <div class="button ">
                 <button type="submit" class="btn btn-success btn-lg" id="servicebtnM2"
                   style="border-radius: 50px;">Send</button>
               </div>
             </div>
 
-          </form>
-        </div>
+          </div>
+        </form>
       </div>
     </section>
 
 
-
     <!-- section 6  -->
-    <section class="section6">
+    <section class="gomes-section section6">
       <div class="section6-container">
         <h1>Benefits of Virtual CFO</h1>
         <p>A Virtual CFO plays a important role in today's business by providing essential financial expertise and
@@ -522,28 +501,223 @@
       </div>
     </section>
 
+
+    <!-- section 7  -->
+
+    <section class="gomes-section section7">
+      <div class="section7-container">
+        <h1>What Clients Say About Us</h1>
+        <p>ViTWO has set a benchmark of Excellence in the world of Finance automation. The reviews shared by our valued
+          clients manifest our validation</p>
+      </div>
+
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="carousel-item-wrapper">
+              <div class="section7-img-wrapper">
+                <img src="./images/slide1.webp" class="d-block" alt="...">
+                <div class="carousel-caption-all d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="section7-img-wrapper">
+                <img src="./images/slide2.webp" class="d-block" alt="...">
+                <div class="carousel-caption-all d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="section7-img-wrapper">
+                <img src="./images/slide3.webp" class="d-block" alt="...">
+                <div class="carousel-caption-all d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+    </section>
+
+
+    <!-- section 8  -->
+
+    <section class="gomes-section section8">
+      <div class="section8-container">
+        <h1>Some Testimonials From Our Customers</h1>
+        <p>Our customers say Excellent
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          4.9 out of 5 based on 1,947 reviews
+        </p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+          <div class="card">
+            <div class="card-body">
+
+              <div class="style">
+                <div class="quote">
+                  <i class="fa-solid fa-4x fa-quote-left"></i>
+                </div>
+                <div class="ratings">
+                  <i class="fas fa-1x fa-star"></i><i class="fas fa-1x fa-star"></i><i class="fas fa-1x fa-star"></i><i
+                    class="fas fa-1x fa-star"></i><i class="fas fa-1x fa-star"></i>
+                </div>
+              </div>
+
+              <p class="card-text">What truly sets Startupfino as apart from their unwavering dedication to customer
+                satisfaction, they go above and beyond to ensure that their clients' needs are fully met. The level of
+                professionalism and integrity they demonstrate is truly commendable. It's rare to find a company that
+                consistently delivers on its promises, as Startupfino does so with ease.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+
+            <div class="card-image">
+              <img src="./images/slide1.webp" class="card-img-bottom" alt="...">
+
+              <div class="clent-name">
+                <h5>Card title</h5>
+                <p>Shadow fax</p>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+
+
+        <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+          <div class="card">
+            <div class="card-body">
+
+              <div class="style">
+                <div class="quote">
+                  <i class="fa-solid fa-4x fa-quote-left"></i>
+                </div>
+                <div class="ratings">
+                  <i class="fas fa-1x fa-star"></i><i class="fas fa-1x fa-star"></i><i class="fas fa-1x fa-star"></i><i
+                    class="fas fa-1x fa-star"></i><i class="fas fa-1x fa-star"></i>
+                </div>
+              </div>
+
+              <p class="card-text">We wholeheartedly recommend Startupfino to anyone in need of the startup services
+                provided by the company. Their exceptional service, expertise, and results-oriented approach make them a
+                top choice in the industry. We are incredibly grateful for the positive impact they've had on our
+                project, and we look forward to continuing taking more services with them in the future.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+
+            <div class="card-image">
+              <img src="./images/slide2.webp" class="card-img-bottom" alt="...">
+
+              <div class="clent-name">
+                <h5>Card title</h5>
+                <p>Shadow fax</p>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+          <div class="card">
+            <div class="card-body">
+
+              <div class="style">
+                <div class="quote">
+                  <i class="fa-solid fa-4x fa-quote-left"></i>
+                </div>
+                <div class="ratings">
+                  <i class="fas fa-1x fa-star"></i><i class="fas fa-1x fa-star"></i><i class="fas fa-1x fa-star"></i><i
+                    class="fas fa-1x fa-star"></i><i class="fas fa-1x fa-star"></i>
+                </div>
+              </div>
+
+              <p class="card-text">Communication with Startupfino was seamless throughout the entire process of Private
+                Company registration. They kept us informed at every stage, providing regular updates and addressing any
+                questions or concerns promptly. It was clear that they valued our input and made us feel like true
+                partners in the journey.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+
+            <div class="card-image">
+              <img src="./images/slide3.webp" class="card-img-bottom" alt="...">
+
+              <div class="clent-name">
+                <h5>Card title</h5>
+                <p>Shadow fax</p>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
   </div>
-
-  <!-- footer line  -->
-  <div class="container">
-    <footer class="py-3 my-4">
-      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
-      </ul>
-      <p class="text-center text-muted">© 2022 Company, Inc</p>
-    </footer>
-  </div>
-
-
-
-  <!-- JS Script  -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
 </body>
+<!-- footer line  -->
+
+<footer class="footer">
+  <div class="waves">
+    <div class="wave" id="wave1"></div>
+    <div class="wave" id="wave2"></div>
+    <div class="wave" id="wave3"></div>
+    <div class="wave" id="wave4"></div>
+  </div>
+
+  <div class="logo">
+    <img src="./images/logo.png" alt="Startupfino Logo">
+  </div>
+
+  <ul class="social-icons">
+    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+  </ul>
+
+  <ul class="menu">
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">Blogs & Resources</a></li>
+    <li><a href="#">Career</a></li>
+    <li><a href="#">Contact Us</a></li>
+    <li><a href="#">Sitemap</a></li>
+  </ul>
+
+  <p>©2023 6 Livo Technologies Pvt Ltd. | All Rights Reserved</p>
+</footer>
+
+
+
+
+
+<!-- JS Script  -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 
 </html>
