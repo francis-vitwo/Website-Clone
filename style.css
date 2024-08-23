@@ -280,6 +280,12 @@ body {
   color: var(--bgcolor)
 }
 
+.section4 .button {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
 .section5 .section5-container {
   width: 100%;
   height: auto;
@@ -303,9 +309,9 @@ body {
 
 .section5-container .form .heading h2 {
   font-weight: 600;
-  font-size: 17px !important;
+  font-size: 15px !important;
   text-align: center;
-  margin-top: 15px;
+  margin: 15px 0;
 }
 
 .section5-container form .email {
@@ -313,8 +319,9 @@ body {
   width: 100%;
   border: 1px solid var(--bgcolor);
   border-radius: 24px;
-  padding: 13px 50px 13px 20px;
-  margin-left: 0;
+  padding: 13px 20px 13px 20px;
+  margin-right: 14px;
+  margin-bottom: 20px;
 }
 
 .section5-container form .number {
@@ -322,7 +329,7 @@ body {
   width: 100%;
   border: 1px solid var(--bgcolor);
   border-radius: 24px;
-  padding: 13px 50px 13px 20px;
+  padding: 13px 20px 13px 20px;
   margin-left: 0;
 }
 
@@ -420,6 +427,12 @@ body {
   appearance: none;
 }
 
+.section6-container .button {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
 .section7 {
   padding: 40px;
 }
@@ -452,6 +465,9 @@ body {
   box-sizing: border-box;
   border-radius: 50%;
   object-fit: cover;
+  background: var(--text-color2);
+  margin: 20px;
+
 }
 
 .section7 .section7-img-wrapper {
@@ -466,7 +482,8 @@ body {
   margin: 15px 0;
 }
 
-.section7 .carousel-inner h5 {
+.section7 .carousel-inner h6,
+h3 {
   text-align: center;
   color: black;
 }
@@ -474,6 +491,23 @@ body {
 .section7 .carousel-inner p {
   text-align: center;
   color: black;
+}
+
+
+.section7 .socials {
+  padding: 10px;
+  background-color: #a2b6ca;
+  border-radius: 15px;
+}
+
+.section7 .socials .fa-brands {
+  color: black;
+}
+
+.section7 .button {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0 0 0;
 }
 
 .section8 {
@@ -511,7 +545,7 @@ body {
 }
 
 .section8 .card {
-  padding: 0px 30px;
+  padding: 0px 10px;
   width: auto;
   height: 100%;
   box-sizing: border-box;
@@ -562,7 +596,7 @@ footer {
   width: 100%;
   background: var(--bgcolor);
   min-height: 100px;
-  padding: 20px ;
+  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -584,7 +618,7 @@ footer .logo img {
   height: 20%;
 }
 
-footer .social-icons{
+footer .social-icons {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -702,7 +736,7 @@ footer p {
 @media only screen and (max-width: 1023px) {
   .gomes-section {
     padding: 30px 10px;
-    margin: 20px 10px;
+    margin: 60px 10px;
   }
 
 
@@ -766,11 +800,15 @@ footer p {
     margin-bottom: 30px;
   }
 
-  .col-12 {
+  .section4 .gap-gutter {
+    margin-bottom: 20px;
+  }
+
+  .gap-row {
     padding: 0;
     flex: 0 0 auto;
     width: 100%;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
   }
 
   .section5-container form .button button,
@@ -820,6 +858,16 @@ footer p {
     margin-bottom: 43px;
   }
 
+  .section8-container .row {
+    margin-bottom: 70px;
+  }
+
+   .section8 .row-gap {
+    row-gap: 25px;
+  } 
+
+  
+
   .gomes-footer .logo img {
     width: 60%;
     height: auto;
@@ -834,7 +882,7 @@ footer p {
     width: 100%;
     text-align: center;
     padding-left: 0;
-}
+  }
 
   /* footer .menu {
     position: relative;
@@ -852,7 +900,9 @@ footer p {
 
 /* @media (min-width: 320px) and (max-width: 1023px) {
         
-  .section1 .carousel-inner{
-    margin: 50px 0;
+    .col-12 {
+    padding: 0;
+    flex: 0 0 auto;
+    width: 100%;
   }
- } */
+ }  */
